@@ -4,7 +4,7 @@
 // A solution to Programming Projects from
 // Chapter 2 of C Programming: A Modern Approach by K. N. King
 //
-// 3. Write a program that asks the user to enter a dollars-and-cents amount,
+// 4. Write a program that asks the user to enter a dollars-and-cents amount,
 // then displays the amount with 5% tax added (`user input`):
 //      Enter an amount: `100.00`
 //      With tax added: $105.00
