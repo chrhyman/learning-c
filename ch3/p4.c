@@ -18,8 +18,10 @@ int main()
 
   printf("Enter phone number [(xxx) xxx-xxxx]: ");
   scanf(" (%d )%d -%d", &area_code, &prefix, &suffix);
+  // input: ` ( 123 ) 98 - 0 `
 
   printf("You entered %.3d.%.3d.%.4d\n", area_code, prefix, suffix);
+  // output `123.098.0000`
 
   return 0;
 }
