@@ -21,22 +21,22 @@
 
 int main(void)
 {
-  float x = 1.3590;
-  // (a)
-  printf("|%-8.1e|\n", x);    // |1.4e+00 |
-  // (b)
-  printf("|%10.6e|\n", x);    // |1.359000e+00| (exceeds 10, so no padding)
-  // (c)
-  printf("|%-8.3f|\n", x);    // |1.359   |
-  // (d)
-  printf("|%6.f|\n", x);      // |     1|
+    float x = 1.3590;
+    // (a)
+    printf("|%-8.1e|\n", x);    // |1.4e+00 |
+    // (b)
+    printf("|%10.6e|\n", x);    // |1.359000e+00| (exceeds 10, so no padding)
+    // (c)
+    printf("|%-8.3f|\n", x);    // |1.359   |
+    // (d)
+    printf("|%6.f|\n", x);      // |     1|
 
-  // extra
-  printf("|%6.0f|\n", x);     // |     1|
-  printf("|%6f|\n", x);       // |1.359000|
-  printf("|%.6f|\n", x);      // |1.359000|
-  printf("|%0.6f|\n", x);     // |1.359000|
-  printf("|%6.2f|\n", x);     // |  1.36|
+    // extra
+    printf("|%6.0f|\n", x);     // |     1|
+    printf("|%6f|\n", x);       // |1.359000|
+    printf("|%.6f|\n", x);      // |1.359000|
+    printf("|%0.6f|\n", x);     // |1.359000|
+    printf("|%6.2f|\n", x);     // |  1.36|
 
-  return 0;
+    return 0;
 }

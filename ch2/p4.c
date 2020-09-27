@@ -14,14 +14,14 @@
 
 int main(void)
 {
-  float after_tax, dollars;
-  float tax = 0.05;
+    float after_tax, dollars;
+    float tax = 0.05;
 
-  printf("Enter an amount: ");
-  scanf("%f", &dollars);
+    printf("Enter an amount: ");
+    scanf("%f", &dollars);
 
-  after_tax = dollars * (1 + tax);
-  printf("With tax added: $%.2f\n", after_tax);
+    after_tax = dollars * (1 + tax);
+    printf("With tax added: $%.2f\n", after_tax);
 
-  return 0;
+    return 0;
 }

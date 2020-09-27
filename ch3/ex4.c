@@ -20,18 +20,18 @@
 
 int main(void)
 {
-  int i, j;
-  float x;
+    int i, j;
+    float x;
 
-  printf("input: ");
-  scanf("%d%f%d", &i, &x, &j);
+    printf("input: ");
+    scanf("%d%f%d", &i, &x, &j);
 
-  printf("i = %d\nx = %f\nj = %d\n", i, x, j);
-  /*
-  // i = 10
-  // x = 0.300000
-  // j = 5
-  */
+    printf("i = %d\nx = %f\nj = %d\n", i, x, j);
+    /*
+    // i = 10
+    // x = 0.300000
+    // j = 5
+    */
 
-  return 0;
+    return 0;
 }

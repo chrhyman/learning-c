@@ -13,19 +13,19 @@
 
 int main(void)
 {
-  int x, value;
+    int x, value;
 
-  printf("Enter a value for x: ");
-  scanf("%d", &x);
+    printf("Enter a value for x: ");
+    scanf("%d", &x);
 
-  value = 3 * x * x * x * x * x
-        + 2 * x * x * x * x
-        - 5 * x * x * x
-        - 1 * x * x
-        + 7 * x
-        - 6;
+    value = 3 * x * x * x * x * x
+          + 2 * x * x * x * x
+          - 5 * x * x * x
+          - 1 * x * x
+          + 7 * x
+          - 6;
 
-  printf("Value of polynomial at x=%d: %d\n", x, value);
+    printf("Value of polynomial at x=%d: %d\n", x, value);
 
-  return 0;
+    return 0;
 }

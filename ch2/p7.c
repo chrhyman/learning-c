@@ -20,29 +20,29 @@
 
 int main(void)
 {
-  int amount;
-  int twenties, tens, fives, ones;
-  int calculated_total;
+    int amount;
+    int twenties, tens, fives, ones;
+    int calculated_total;
 
-  printf("Enter a dollar amount: ");
-  scanf("%d", &amount);
+    printf("Enter a dollar amount: ");
+    scanf("%d", &amount);
 
-// int division in C yields the floor of the mathematical division
-  twenties = amount / 20;
-  amount = amount - twenties * 20;
-  tens = amount / 10;
-  amount = amount - tens * 10;
-  fives = amount / 5;
-  ones = amount - fives * 5;
+    // int division in C yields the floor of the mathematical division
+    twenties = amount / 20;
+    amount = amount - twenties * 20;
+    tens = amount / 10;
+    amount = amount - tens * 10;
+    fives = amount / 5;
+    ones = amount - fives * 5;
 
-// what we actually calculated, in case user gave weird input for `amount`
-  calculated_total = twenties * 20 + tens * 10 + fives * 5 + ones;
+    // what we actually calculated in case user gave weird input for `amount`
+    calculated_total = twenties * 20 + tens * 10 + fives * 5 + ones;
 
-  printf("\n$20 bills: %d\n", twenties);
-  printf("$10 bills: %d\n", tens);
-  printf(" $5 bills: %d\n", fives);
-  printf(" $1 bills: %d\n", ones);
-  printf("= $%d\n", calculated_total);
+    printf("\n$20 bills: %d\n", twenties);
+    printf("$10 bills: %d\n", tens);
+    printf(" $5 bills: %d\n", fives);
+    printf(" $1 bills: %d\n", ones);
+    printf("= $%d\n", calculated_total);
 
-  return 0;
+    return 0;
 }

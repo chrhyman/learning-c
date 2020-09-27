@@ -14,13 +14,13 @@
 
 int main(void)
 {
-  float radius, volume;
+    float radius, volume;
 
-  printf("Enter a radius: ");
-  scanf("%f", &radius);
+    printf("Enter a radius: ");
+    scanf("%f", &radius);
 
-  volume = 4.0f / 3.0f * PI * radius * radius * radius;
-  printf("Volume of a sphere with radius %.2fm: %.2fm^3\n", radius, volume);
+    volume = 4.0f / 3.0f * PI * radius * radius * radius;
+    printf("Volume of a sphere with radius %.2fm: %.2fm^3\n", radius, volume);
 
-  return 0;
+    return 0;
 }

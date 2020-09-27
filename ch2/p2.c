@@ -15,10 +15,10 @@
 
 int main(void)
 {
-  float radius = 10.0f, volume;
+    float radius = 10.0f, volume;
 
-  volume = 4.0f / 3.0f * PI * radius * radius * radius;
-  printf("Volume of a sphere with 10m radius: %.2fm^3\n", volume);
+    volume = 4.0f / 3.0f * PI * radius * radius * radius;
+    printf("Volume of a sphere with 10m radius: %.2fm^3\n", volume);
 
-  return 0;
+    return 0;
 }
