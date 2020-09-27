@@ -1,6 +1,6 @@
 /*
 // Author: Chris Hyman, chris@wugs.me
-// Date: 26 Sept 2020
+// Date: 27 Sept 2020
 // A solution to Programming Exercises and Projects from
 // Chapter 4 of C Programming: A Modern Approach by K. N. King
 //
