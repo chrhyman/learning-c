@@ -19,7 +19,7 @@
 
 #include <stdio.h>
 
-int main()
+int main(void)
 {
   float x = 1.3590;
   // (a)

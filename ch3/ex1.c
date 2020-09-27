@@ -10,7 +10,7 @@
 
 #include <stdio.h>
 
-int main()
+int main(void)
 {
   // (a)
   printf("|%6d,%4d|\n", 86, 1040);    // |    86,1040|

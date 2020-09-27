@@ -12,7 +12,7 @@
 
 #include <stdio.h>
 
-int main()
+int main(void)
 {
   int day, month, year;
 

@@ -18,7 +18,7 @@
 
 #include <stdio.h>
 
-int main()
+int main(void)
 {
   int i, j;
   float x;

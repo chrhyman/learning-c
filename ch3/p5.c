@@ -22,7 +22,7 @@
 
 #include <stdio.h>
 
-int main()
+int main(void)
 {
   // spacing used to show the "structure" of the numbers a-p
   int a, b, c, d,

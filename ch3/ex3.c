@@ -16,7 +16,7 @@
 
 #include <stdio.h>
 
-int main()
+int main(void)
 {
   int a_i1, a_i2, b_i1, b_i2, b_i3, b_i4, b_i5, b_i6;
   float c_f1, c_f2, d_f1, d_f2, d_f3, d_f4;

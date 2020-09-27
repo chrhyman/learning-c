@@ -20,7 +20,7 @@
 
 #include <stdio.h>
 
-int main()
+int main(void)
 {
   int item_num, day, month, year;
   float unit_price;

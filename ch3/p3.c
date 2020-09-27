@@ -19,7 +19,7 @@
 
 #include <stdio.h>
 
-int main()
+int main(void)
 {
   int gs1, group, publisher, item, check;
 
