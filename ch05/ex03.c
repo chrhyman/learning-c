@@ -31,9 +31,11 @@ int main(void)
 
     // (d)
     i = 1; j = 1; k = 1;
-    printf("%d ", ++i || ++j && ++k);   // note: && has higher precedence
+    printf("%d ", ++i || ++j && ++k);
     printf("%d %d %d\n", i, j, k);          // 1 2 1 1
     /*
+    // note that && binds more closely than ||, so evaluating ++i is enough
+    // to short-circuit the evaluation of the || expression to 1.
     // if the expression were instead `(++i || ++j) && ++k`
     // then the output would be: 1 2 1 2
     */
