@@ -17,16 +17,14 @@ int main(void)
     printf("Enter numerical grade: ");
     scanf("%d", &grade);
 
-    if (grade < 0 || grade > 100)
-    {
+    if (grade < 0 || grade > 100) {
         printf("Error! Grade must be in range 0-100.\n");
         return 0;
     }
 
     printf("Letter grade: ");
 
-    switch (grade / 10)         // returns int of tens place value
-    {
+    switch (grade / 10) {           // returns int of tens place value
         case 10:
         case 9:
             printf("A\n");

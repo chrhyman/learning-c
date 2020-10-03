@@ -24,12 +24,9 @@ int main(void)
     printf("Enter second date (mm/dd/yy): ");
     scanf("%d/%d/%d", &snd_mm, &snd_dd, &snd_yy);
 
-    if (fst_yy == snd_yy)
-    {
-        if (fst_mm == snd_mm)
-        {
-            if (fst_dd == snd_dd)
-            {
+    if (fst_yy == snd_yy) {
+        if (fst_mm == snd_mm) {
+            if (fst_dd == snd_dd) {
                 printf("Both dates are the same!\n");
                 return 0;                               // exit program
             }

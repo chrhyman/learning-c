@@ -20,10 +20,8 @@ int main(void)
     scanf("%1d%1d", &tens, &ones);
     printf("You entered the number ");
 
-    if (tens == 1)
-    {
-        switch (ones)
-        {
+    if (tens == 1) {
+        switch (ones) {
             case 0:
                 printf("ten.\n");
                 return 0;
@@ -56,10 +54,8 @@ int main(void)
                 return 0;
         }
     }
-    else if (2 <= tens && tens <= 9)
-    {
-        switch (tens)
-        {
+    else if (2 <= tens && tens <= 9) {
+        switch (tens) {
             case 2:
                 printf("twenty");
                 break;
@@ -86,14 +82,12 @@ int main(void)
                 break;
         }
     }
-    else
-    {
+    else {
         printf("Error.\n");
         return 0;
     }
 
-    switch (ones)
-    {
+    switch (ones) {
         case 0:
             printf(".\n");
             break;

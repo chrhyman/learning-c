@@ -33,7 +33,7 @@ int main(void)
 
     printf("Enter a (12-digit) UPC: ");
     scanf("%1d%1d%1d%1d%1d%1d%1d%1d%1d%1d%1d%1d",
-    &a, &b, &c, &d, &e, &f, &g, &h, &i, &j, &k, &check);
+        &a, &b, &c, &d, &e, &f, &g, &h, &i, &j, &k, &check);
 
     first_sum = a + c + e + g + i + k;
     second_sum = b + d + f + h + j;

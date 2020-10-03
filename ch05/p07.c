@@ -20,24 +20,20 @@ int main(void)
     printf("Enter four integers: ");
     scanf("%d%d%d%d", &a, &b, &c, &d);
 
-    if (a >= b)
-    {
+    if (a >= b) {
         max1 = a;
         min1 = b;
     }
-    else
-    {
+    else {
         max1 = b;
         min1 = a;
     }
 
-    if (c >= d)
-    {
+    if (c >= d) {
         max2 = c;
         min2 = d;
     }
-    else
-    {
+    else {
         max2 = d;
         min2 = c;
     }
@@ -46,7 +42,7 @@ int main(void)
         smallest = min1;
     else
         smallest = min2;
- 
+
     if (max1 >= max2)
         largest = max1;
     else
