@@ -9,7 +9,7 @@
 
 int main(void)
 {
-    int i;
+    int i, condition;
 
 // 8. What output does the following `for` statement product?
     for (i = 10; i >= 1; i /= 2)
@@ -24,6 +24,25 @@ int main(void)
     while (i >= 1) {
         printf("%d ", i++);
         i /= 2;
+    }
+
+/*
+// 10. Show how to replace a `continue` statement by an equivalent `goto`
+// statement.
+*/
+    for (;;) {
+        // statements
+        if (condition)
+            continue;
+        // statements
+    }
+    // is equivalent to
+    for (;;) {
+        // statements
+        if (condition)
+            goto end_of_loop;
+        // statements
+        end_of_loop: ; // null statement
     }
 
     return 0;
