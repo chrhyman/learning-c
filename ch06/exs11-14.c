@@ -9,7 +9,7 @@
 
 int main(void)
 {
-    int i, sum, d, n;
+    int i, sum, d, n, m, q;
 
 // 11. What output does the following program fragment product?
     sum = 0;
@@ -32,6 +32,14 @@ int main(void)
         printf("%d is divisible by %d\n", n, d);
     else
         printf("%d is prime\n", n);
+
+// 13. Rewrite the provided loop so that its body is empty.
+    for (n = 0; m > 0; n++, m /= 2)
+        ;
+
+// 14. Find the error in the following program fragment and fix it.
+    if (q % 2 == 0)//; <--- remove this semicolon
+        printf("q is even\n");
 
     return 0;
 }
