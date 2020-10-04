@@ -19,9 +19,8 @@ int main(void)
     printf("Value of n: ");
     scanf("%d", &n);
 
-    for (int i = 2; i * i <= n; i++)
-        if (i * i % 2 == 0)
-            printf("%d ", i * i);
+    for (int i = 2; i * i <= n; i += 2)
+        printf("%d ", i * i);
 
     printf("\n");
 
