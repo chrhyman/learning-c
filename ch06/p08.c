@@ -17,7 +17,7 @@
 
 int main(void)
 {
-    int days_in_month, start_day, day_of_week;
+    int days_in_month, start_day, day_of_week = 1;
 
     printf("Enter number of days in month: ");
     scanf("%d", &days_in_month);
@@ -25,7 +25,7 @@ int main(void)
     scanf("%d", &start_day);
     printf("\nSun\tMon\tTues\tWed\tThur\tFri\tSat\n");
 
-    for (day_of_week = 1; day_of_week < start_day; day_of_week++)
+    for (; day_of_week < start_day; day_of_week++)
         printf("\t");
 
     for (int i = 1; i <= days_in_month; i++) {
