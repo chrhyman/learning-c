@@ -1,10 +1,10 @@
 /*
 // Author: Chris Hyman, chris@wugs.me
-// Date: 26 Sept 2020
+// Date: 6 Oct 2020
 // A solution to Programming Projects from
 // Chapter 2 of C Programming: A Modern Approach by K. N. King
 //
-// 8. Modify the program from Project 8 in Chapter 2 so that it also asks the
+// 9. Modify the program from Project 8 in Chapter 2 so that it also asks the
 // user to enter the number of payments and then displays the balance remaining
 // after each of these payments.
 */
