@@ -1,8 +1,8 @@
 /*
 // Author: Chris Hyman, chris@wugs.me
-// Date: 3 Oct 2020
+// Date: 6 Oct 2020
 // A solution to Programming Exercises and Projects from
-// Chapter 5 of C Programming: A Modern Approach by K. N. King
+// Chapter 6 of C Programming: A Modern Approach by K. N. King
 //
 // 10. Generalize the program from Chapter 5 Programming Project 9 so that the
 // user may enter any number of dates. The user will enter 0/0/0 to indicate
