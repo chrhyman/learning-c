@@ -4,11 +4,14 @@
 // A solution to Programming Exercises and Projects from
 // Chapter 5 of C Programming: A Modern Approach by K. N. King
 //
-// 9. Write a program that prompts the user to enter two dates and then
-// indicates which date comes earlier on the calendar:
-//          Enter first date (mm/dd/yy): `3/6/08`
-//          Enter second date (mm/dd/yy): `5/17/07`
-//          5/17/07 is earlier than 3/6/08
+// 10. Generalize the program from Chapter 5 Programming Project 9 so that the
+// user may enter any number of dates. The user will enter 0/0/0 to indicate
+// that no more dates will be entered:
+//          Enter a date (mm/dd/yy): `3/6/08`
+//          Enter a date (mm/dd/yy): `5/17/07`
+//          Enter a date (mm/dd/yy): `6/3/07`
+//          Enter a date (mm/dd/yy): `0/0/0`
+//          5/17/07 is the earliest date
 */
 
 #include <stdbool.h>
@@ -16,41 +19,27 @@
 
 int main(void)
 {
-    int fst_mm, fst_dd, fst_yy, snd_mm, snd_dd, snd_yy;
-    bool first_is_earlier;
+    int early_mm = 0, early_dd = 0, early_yy = 0;
+    int m_in, d_in, y_in;
 
-    printf("Enter first date (mm/dd/yy): ");
-    scanf("%d/%d/%d", &fst_mm, &fst_dd, &fst_yy);
-    printf("Enter second date (mm/dd/yy): ");
-    scanf("%d/%d/%d", &snd_mm, &snd_dd, &snd_yy);
+    for (;;) {
+        printf("Enter a date (mm/dd/yy): ");
+        scanf("%d/%d/%d", &m_in, &d_in, &y_in);
 
-    if (fst_yy == snd_yy) {
-        if (fst_mm == snd_mm) {
-            if (fst_dd == snd_dd) {
-                printf("Both dates are the same!\n");
-                return 0;                               // exit program
-            }
-            else if (fst_dd < snd_dd)
-                first_is_earlier = true;
-            else
-                first_is_earlier = false;
+        if (d_in == 0 && m_in == 0 && y_in == 0) {      // input 0/0/0
+            printf("%d/%d/%.2d is the earliest date\n",
+                early_mm, early_dd, early_yy);
+            return 0;
         }
-        else if (fst_mm < snd_mm)
-            first_is_earlier = true;
-        else
-            first_is_earlier = false;
+
+        if ((early_mm == 0 && early_dd == 0 && early_yy == 0)
+            || y_in < early_yy
+            || (y_in == early_yy && m_in < early_mm)
+            || (y_in == early_yy && m_in == early_mm && d_in < early_dd)
+            ) {
+            early_mm = m_in;
+            early_dd = d_in;
+            early_yy = y_in;
+        }
     }
-    else if (fst_yy < snd_yy)
-        first_is_earlier = true;
-    else
-        first_is_earlier = false;
-
-    if (first_is_earlier)
-        printf("%d/%d/%.2d is earlier than %d/%d/%.2d\n",
-            fst_mm, fst_dd, fst_yy, snd_mm, snd_dd, snd_yy);
-    else
-        printf("%d/%d/%.2d is earlier than %d/%d/%.2d\n",
-            snd_mm, snd_dd, snd_yy, fst_mm, fst_dd, fst_yy);
-
-    return 0;
 }
